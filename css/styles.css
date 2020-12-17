@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-size: cover;
+  background-image: url("../WAwallpaper.png");
+  height: 100%;
+  z-index: 1;
+}
+
+.container {
+  background-color: #eee;
+  height: 90vh;
+  margin: 2rem 15rem 0;
+  z-index: 10;
+  box-sizing: border-box;
+  border: 20px solid rgba(#777, 0.3);
+  display: flex;
+  box-shadow: 0 1px 10px #888888;
+}
+.profile {
+  background-color: orangered;
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d3cfcf;
+}
+
+.chat {
+  background-color: blueviolet;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__header {
+  flex: 0 0 8%;
+  background-color: #e7e3e3;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #d3cfcf;
+}
+.profile__search {
+  flex: 0 0 5%;
+  background-color: #e7e3e3;
+  text-align: center;
+}
+.profile__contacts {
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  scrollbar-track-color: none;
+}
+
+.chat__header {
+  flex: 0 0 8%;
+  background-color: #e7e3e3;
+  display: flex;
+  align-items: center;
+  border: 1px solid #d3cfcf;
+}
+.chat__box {
+  flex: 1;
+  background-image: url("../wallpaper.webp");
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  border: 1px solid #d3cfcf;
+}
+.chat__keyboard {
+  flex: 0 0 8%;
+  background-color: #e7e3e3;
+  border: 1px solid #d3cfcf;
+}
+
+.header__image {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100%;
+  margin-right: auto;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.header__options {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.icons {
+  margin: 1.5rem;
+  color: #837e7e;
+  transform: scale(1.5);
+}
+
+.search__input {
+  border-radius: 100px;
+  outline: none;
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 80%;
+  border: none;
+  z-index: 10;
+  margin-right: -3rem;
+}
+
+.search__icon {
+  margin-right: 1rem;
+  color: grey;
+}
+
+.search__input::placeholder {
+  font-size: inherit;
+}
+
+.contact__list {
+  list-style-type: none;
+}
+
+.contact__list__items {
+  display: flex;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: 1px solid #eee;
+}
+.contact__list__items:hover {
+  cursor: pointer;
+  background-color: #e7e7e7ed;
+}
+
+.contact-photo {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+  margin: 10px;
+}
+.contact__details {
+  display: block;
+  margin: auto auto auto 10px;
+}
+
+.contact__chat {
+  color: #4d4848;
+}
+.time {
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+}
+
+.chat__profile {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+  cursor: pointer;
+}
+
+.chat__name {
+  font-size: 1.5rem;
+  letter-spacing: 1;
+  font-weight: 200;
+}
+.chat__photo {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+  margin: 1rem;
+}
+
+.chat__options {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.option__icons {
+  color: grey;
+  transform: scale(1.2);
+  margin: auto 1.5rem;
+  align-self: stretch;
+}
+.option__icons:hover {
+  cursor: pointer;
+}
+
+.chat__keyboard {
+  display: flex;
+  align-items: center;
+}
+.chat__input {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  margin-right: auto;
+}
+.chat-emoji {
+  transform: scale(1.5);
+  color: grey;
+  margin-left: 3rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.chat-microphone {
+  transform: scale(1.5);
+  color: grey;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+h6 {
+  font-size: 1rem;
+  margin: 1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.chats {
+  margin-bottom: 10px;
+  width: max-content;
+  margin: auto 1rem;
+  border-radius: 20px;
+}
+
+.chats__user {
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 1px;
+  margin-left: 5rem;
+}
+
+.chats__me {
+  margin-bottom: 10px;
+  background-color: #8ef8b7;
+  padding: 1px;
+  margin-right: 5rem;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .chat {
+    display: none;
+  }
+  .profile {
+    flex: 1;
+  }
+
+  .container {
+    margin: 1rem;
+  }
+}
